@@ -11591,6 +11591,17 @@ Multi-line text blocks can be used in command and option descriptions, headers a
 For more details, see https://www.infoq.com/articles/java-text-blocks/[this article] by Java Language Architect Brian Goetz.
 
 
+== Known Limitations
+
+Before designing a command line, check the limitations that apply to the features you plan to use:
+
+* <<Variable Arity Limitations>> for options that take a variable number of values.
+* <<Optional Parameter Limitations>> for options with optional values.
+* <<Argument Group Limitations>> for grouping options and positional parameters.
+* <<Limitations of Variable Interpolation>> for placeholders in command metadata.
+* <<Field Values>> for using initial field values as defaults.
+* <<Interactive (Password) Options>> for prompting for input, including interactive positional parameters.
+
 == Dependency Injection
 
 === Guice Example
